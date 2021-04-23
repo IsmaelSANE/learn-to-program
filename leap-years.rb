@@ -3,14 +3,11 @@ starting_year = gets.chomp.to_i
 puts "PLEASE ENTER AN ENDING YEAR"
 ending_year = gets.chomp.to_i
 leap_year = []
+
 while starting_year <= ending_year
   if starting_year%4 == 0
     if starting_year%100 == 0
-      if starting_year%400 == 0
-        leap_year << starting_year
-      else
-        starting_year = starting_year + 1
-      end
+      starting_year%400 == 0 ? leap_year << starting_year : starting_year = starting_year + 1
     else
       leap_year << starting_year
     end
