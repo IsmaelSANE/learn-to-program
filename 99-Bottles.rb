@@ -1,6 +1,8 @@
+# “99 Bottles of Beer on the Wall.” Write a program that prints out
+# the lyrics to that beloved classic, “99 Bottles of Beer on the Wall.”
+
 beers = 99
 endings = rand(3)
-
 
 beers.downto(1) do |num|
   if num == 1
